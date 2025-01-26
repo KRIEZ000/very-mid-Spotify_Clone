@@ -1,0 +1,175 @@
+/* align items and ...content --- vertical, justify - content - horizontal
+
+Position -
+Relative - it means relative to its normal position
+you can do top, bottom, left, right 
+
+Absolute - it means Relative to the Parent...
+
+fixed - it is relative to browser window   
+
+sticky - the item  will not move even when scrolling or will not roll out of the page */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", serif; */
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin:0;
+    padding: 0;
+
+
+}
+
+nav{
+
+    background-color: black;
+    font-family: "Smooch Sans", serif;
+}
+
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    color: aliceblue;
+}
+
+.yo{
+    margin-left: 40px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+span{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.container{
+    min-height: 65vh; /* it means 65 % of height*/
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", serif;
+    display: flex;
+    width: 70%;
+    margin: 23px  auto;
+    border-radius: 12px ;
+    padding: 34px;
+    background-image: url('backpage.jpeg');
+
+}
+
+#myProgressBar{
+    width: 50vw;
+    cursor: pointer;
+
+}
+
+.icons{
+    color: aliceblue;
+    position: absolute;
+    top: 9px;
+    font-size: 25px;
+    
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(210, 6, 6, 0.884) ;
+    justify-content: space-between;
+    border-radius: 25px;
+    
+}
+
+.songItem img{
+    
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.songListPlay span{
+
+    margin-right: 15px;
+    font-size: small;
+    align-items: center;
+    
+}
+
+ fa-circle-play{
+    
+    cursor: pointer;
+}
+
+.yo2{
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+.hindi{
+    font-size: 15px;
+}
+
+.songItemContainer{
+
+    margin-top: 40px;
+}
+
+
+
+.songInfo{
+
+position: absolute;
+left: 10vw;
+
+}
+
+.songInfo img{
+
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    
+    }
+
